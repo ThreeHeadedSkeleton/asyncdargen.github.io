@@ -6,10 +6,20 @@
   </head>
   <body>
     <h1 class="uppercase" style="text-align: center;">Dargen</h1>
-    <h1 class="uppercase" style="text-align: center;">java, js, php, html, css, kotlin</h1>
- <footer>
-    <div>Миша гей</div>
-  </footer>
+    <h1 id = "q" class="uppercase" style="text-align: center;">java, js, php, html, css, kotlin</h1>
+ <script>
+   function(){
+      let q = ["java", "js", "php", "html", "css", "kotlin"];
+      let n = 0;
+      setInterval(new function(){
+        document.getElementById("q").innerHTML = q[n];
+       n = n+1;
+       if(n>5){
+        n = 0;
+}
+       }, 75);
+}
+ </script>
  </body>
   
 </html>
